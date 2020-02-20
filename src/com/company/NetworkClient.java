@@ -54,7 +54,6 @@ public class NetworkClient implements Runnable {
             System.out.println("client recieved: "+ serverMsg);
             addToReceiveQueue(serverMsg);
 
-            // TODO: Save the msg to a queue instead
         } catch (Exception ex) {
             try {
                 Thread.sleep(SLEEP_MS);
